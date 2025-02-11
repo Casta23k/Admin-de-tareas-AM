@@ -52,7 +52,7 @@ export function TaskProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-// Hook para usar el contexto
+
 export function useTaskContext() {
   const context = useContext(TaskContext);
   if (!context) {

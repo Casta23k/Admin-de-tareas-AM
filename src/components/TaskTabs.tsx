@@ -23,14 +23,6 @@ export default function TaskTabs() {
 
   return (
     <div className="w-full max-w-2xl mx-auto flex flex-col items-center">
-      
-      <button
-        onClick={() => setModalOpen(true)}
-        className="bg-green-500 text-white px-6 py-3 rounded mb-6"
-      >
-        + Agregar Tarea
-      </button>
-
       <div className="flex justify-center space-x-4 mb-4">
         <button
           onClick={() => setFilter("all")}
@@ -53,7 +45,7 @@ export default function TaskTabs() {
       </div>
 
       {filteredTasks.length === 0 ? (
-        <p className="text-gray-500 text-center">No hay tareas en esta categoría.</p>
+        <p className="text-gray-500 text-center">No hay tareas.</p>
       ) : (
         <ul>
           {filteredTasks.map((task) => (
